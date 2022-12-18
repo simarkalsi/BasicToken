@@ -6,10 +6,10 @@ export default function Transfer(props) {
 
     const setHandler = async (event) => {
         event.preventDefault();
-        let decimals=await props.contract.decimals();
+        let decimals=await props.token.decimals();
         let amount = (event.target.setAmount.value)*( Math.pow(10, decimals));
         let receiverAddress = event.target.setAddress.value;
-        await props.contract.transaction(receiverAddress, amount);
+        await props.token.transaction(receiverAddress, amount);
 
     }
     return (
@@ -22,7 +22,7 @@ export default function Transfer(props) {
                     </DivWrapper>
 
                     <DivWrapper style={{ marginBottom: "20px" }}>
-                        <Recipient type="number" placeholder='Amount in ETH' id="setAmount" min="0" /><br />
+                        <Recipient type="number" placeholder='Amount in BT' id="setAmount" min="0" /><br />
                     </DivWrapper>
                     <Button type={"submit"}>TRANSFER</Button>
                 </form>
