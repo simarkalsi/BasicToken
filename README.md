@@ -1,13 +1,7 @@
-# Sample Hardhat Project
+# Basic Token Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-Try running some of the following tasks:
+Deployed Dapp Link-> https://basic-token.vercel.app/
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Smart Contract  Address: 0x1e78d0F334edfD46031d8163753BFAB6c313E416
+deployed on Goerli test net-> https://goerli.etherscan.io/address/0x1e78d0F334edfD46031d8163753BFAB6c313E416
